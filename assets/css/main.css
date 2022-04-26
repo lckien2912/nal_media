@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* bottom: 0; */
+  box-sizing: inherit;
+}
+
+:root {
+  --normal-gray: #7d7d7d;
+  --light-gray: #ccc;
+  --black-color: #000;
+  --white-color: #fff;
+  --hotnews-height: calc((450px / 2));
+}
+
+html {
+  font-family: sans-serif, Helvetica, "Noto Serif JP";
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
