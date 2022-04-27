@@ -195,7 +195,7 @@ function renderPopuPosts(obj) {
     const item = `<li class="post__item">
                       <a href="##" class="sub-item__link">
                         <div class="sub-item__img">
-                          <img src="/assets/img/${post.id}.jpg" alt="" />
+                          <img src="./assets/img/${post.id}.jpg" alt="" />
                         </div>
                         <section class="sub-post__content">
                           <span class="post__tag ${tagType}">${post.category_name}</span>
@@ -229,7 +229,7 @@ function renderBanners(obj) {
   obj.forEach((banner) => {
     const item = `<a href="##" class="banner__link">
                     <img
-                      src="/assets/img/${banner.image}.jpg"
+                      src="./assets/img/${banner.image}.jpg"
                       alt=""
                       class="banner"
                     />
