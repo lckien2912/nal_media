@@ -15,8 +15,10 @@
 }
 
 .tag__link {
+  display: inline-block;
   color: var(--normal-gray);
   transition: all 0.5s;
+  padding-left: 4px;
 }
 
 .tag__link:hover {

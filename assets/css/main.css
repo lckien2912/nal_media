@@ -2,10 +2,7 @@
   padding: 0;
   margin: 0;
   left: 0;
-  right: 0;
   top: 0;
-  /* bottom: 0; */
-  box-sizing: inherit;
 }
 
 :root {
@@ -26,4 +23,51 @@ html {
 a {
   text-decoration: none;
   display: block;
+  color: var(--black-color);
+}
+
+span {
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+
+.title {
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+.author {
+  color: var(--normal-gray);
+  font-weight: bold;
+  padding-bottom: 6px;
+  font-size: 1.4rem;
+}
+
+.content__paragraph {
+  font-size: 1.4rem;
+  color: var(--normal-gray);
+}
+
+.trending__tag.red {
+  background-color: red;
+}
+.trending__tag.blue {
+  background-color: blue;
+}
+.trending__tag.purple {
+  background-color: purple;
+}
+
+.beige {
+  background-color: #e0d8b0;
+}
+
+.black {
+  background-color: var(--black-color);
+}
+
+.neon-green {
+  background-color: #55d8c1;
 }
