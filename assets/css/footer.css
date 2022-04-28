@@ -1,7 +1,14 @@
+footer {
+  cursor: default;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .footer__container {
   border-top: 2px solid var(--black-color);
   padding: 10px 0 0;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .footer__info {
@@ -16,6 +23,6 @@
 }
 
 .footer__logo img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }

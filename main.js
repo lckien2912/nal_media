@@ -172,7 +172,7 @@ function renderLastestPosts(obj) {
     const item = `<li class="post__item">
                       <a href="##" class="item__link row sm-gutters">
                         <div class="item__img col pc-4 tb-4 mb-12">
-                          <img src="./assets/img/${post.id}.jpg" alt="" />
+                          <img lazy-src="./assets/img/${post.id}.jpg" src="" alt="" />
                         </div>
                         <section class="post__content col pc-8 tb-8 mb-12">
                           <span class="post__tag ${tagType}">${post.category_name}</span>
@@ -205,7 +205,7 @@ function renderPopuPosts(obj) {
     const item = `<li class="post__item">
                       <a href="##" class="sub-item__link">
                         <div class="sub-item__img">
-                          <img src="./assets/img/${post.id}.jpg" alt="" />
+                          <img lazy-src="./assets/img/${post.id}.jpg" src="" alt="" />
                         </div>
                         <section class="sub-post__content">
                           <span class="post__tag ${tagType}">${post.category_name}</span>
@@ -239,7 +239,8 @@ function renderBanners(obj) {
   obj.forEach((banner) => {
     const item = `<a href="##" class="banner__link">
                     <img
-                      src="./assets/img/${banner.image}.jpg"
+                      lazy-src="./assets/img/${banner.image}.jpg"
+                      src=""
                       alt=""
                       class="banner"
                     />

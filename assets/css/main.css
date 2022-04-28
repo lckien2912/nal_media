@@ -10,7 +10,6 @@
   --light-gray: #ccc;
   --black-color: #000;
   --white-color: #fff;
-  --hotnews-height: calc((450px / 2));
 }
 
 html {
@@ -82,6 +81,12 @@ ul {
 .more__news {
   position: relative;
   height: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.more__news:hover > .more__links {
+  color: var(--black-color);
 }
 
 .more__links {
@@ -91,6 +96,7 @@ ul {
   line-height: 1.1rem;
   text-transform: uppercase;
   color: var(--normal-gray);
+  transition: 0.2s;
 }
 
 .more__news::before {

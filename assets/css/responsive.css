@@ -3,16 +3,30 @@
     padding: 0px 10px;
   }
 
+  .nav__item {
+    padding: 15px 15px;
+  }
+
   .post,
   .top-views {
     height: 300px;
     margin-bottom: 20px;
   }
 
-  .item__img img {
-    /* height: 100% */
-    /* width: auto; */
+  .item__img {
     max-height: 400px;
+  }
+
+  .item__img img {
+    max-height: 400px;
+  }
+
+  .post__paragraph {
+    padding-top: 0;
+  }
+
+  .post__item {
+    padding-bottom: 30px;
   }
 }
 
@@ -44,6 +58,14 @@
   .header__search {
     position: static;
     width: 100%;
+  }
+
+  .footer__logo img {
+    width: 100%;
+  }
+
+  .post__paragraph {
+    margin-right: 0;
   }
 }
 
