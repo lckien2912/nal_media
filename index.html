@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Noto+Serif+JP"
@@ -26,8 +27,8 @@
     <div id="nal-media">
       <div class="container grid wide">
         <header class="header">
-          <div class="header__container row no-gutters">
-            <div class="header-left col pc-4">
+          <div class="header__container row">
+            <div class="header-left col pc-4 tb-12 mb-12">
               <nav class="header__tag">
                 <a href="#" class="tag__link">
                   <i class="fa-solid fa-tags"></i>
@@ -51,20 +52,26 @@
                 </a>
               </div>
             </div>
-            <div class="header-center col pc-4">
+            <div class="header-center col pc-4 tb-12 mb-12">
               <h1 class="header__logo">NAL MEDIA</h1>
               <h1 class="header__title">
                 ベトナムオフショア開発にまつわる情報を提供します
               </h1>
             </div>
-            <div class="header-right col pc-4">
+            <div class="header-right col pc-4 tb-12 mb-12">
+              <!-- <div></div> -->
               <div class="header__search">
+                <input
+                  type="text"
+                  placeholder="What are you looking for?"
+                  class="search__input"
+                />
                 <i class="fa-solid fa-magnifying-glass search__icon"></i>
               </div>
             </div>
           </div>
-          <div class="navbar-container row no-gutters">
-            <div class="col pc-12">
+          <div class="navbar-container row">
+            <div class="col pc-12 tb-12 mb-12">
               <nav class="navbar">
                 <a href="##" class="nav__item">オフショア開発</a>
                 <a href="##" class="nav__item">NALブログ</a>
@@ -170,6 +177,12 @@
                       </a>
                     </li>
                   </ul>
+                  <div class="more__news">
+                    <a href="##" class="more__links"
+                      >More News
+                      <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="col pc-4 tb-12 mb-12">
@@ -194,6 +207,12 @@
                       </a>
                     </li>
                   </ul>
+                  <div class="more__news">
+                    <a href="##" class="more__links"
+                      >More News
+                      <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                  </div>
                 </div>
                 <div class="tag__section">
                   <h1 class="section__heading">
@@ -227,7 +246,18 @@
             </div>
           </div>
         </main>
-        <footer></footer>
+        <footer>
+          <div class="footer row no-gutters">
+            <div class="footer__container col pc-12 tb-12 mb-12">
+              <div class="row no-gutters">
+                <div class="footer__logo col pc-6 tb-12 mb-12">
+                  <img src="./assets/img/logo-NAL.jpg" alt="" />
+                </div>
+                <div class="footer__info col pc-6 tb-12 mb-12"></div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="main.js"></script>

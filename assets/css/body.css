@@ -25,6 +25,7 @@ main {
   height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-origin: center;
   padding: 30px 30px 0;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,8 @@ main {
   height: 215px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-origin: center;
+
   padding: 30px 30px 0;
   display: flex;
   flex-direction: column;
@@ -71,13 +74,35 @@ main {
 }
 
 .main-content {
-  padding-top: 28px;
+  margin-top: 23px;
 }
 
 .section__heading {
   font-size: 1.8rem;
   position: relative;
   margin-bottom: 16px;
+}
+
+.section__heading::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: var(--light-gray);
+  position: absolute;
+  top: 50%;
+  z-index: -2;
+}
+
+.section__heading::before {
+  content: "";
+  height: 2px;
+  width: 50%;
+  left: 0;
+  background-color: var(--black-color);
+  position: absolute;
+  top: 50%;
+  z-index: -1;
 }
 
 .post__item {
@@ -125,7 +150,7 @@ main {
 .tag__section .tag__link {
   display: block;
   font-size: 1.4rem;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .tag__link strong {
@@ -137,4 +162,12 @@ main {
 }
 .banner {
   margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.main-section,
+.sub-section {
+  margin-bottom: 30px;
 }

@@ -1,0 +1,21 @@
+.footer__container {
+  border-top: 2px solid var(--black-color);
+  padding: 10px 0 0;
+  margin-bottom: 20px;
+}
+
+.footer__info {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: var(--normal-gray);
+  line-height: 2rem;
+}
+
+.footer__info p:first-child {
+  font-weight: bold;
+}
+
+.footer__logo img {
+  width: 100%;
+  height: auto;
+}

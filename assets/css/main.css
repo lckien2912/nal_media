@@ -18,6 +18,7 @@ html {
   font-size: 62.5%;
   line-height: 1.6rem;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a {
@@ -36,6 +37,12 @@ ul {
 .title {
   color: var(--black-color);
   font-weight: bold;
+  background-color: var(--white-color);
+}
+
+.section__link.title {
+  display: inline-block;
+  padding-right: 10px;
 }
 
 .author {
@@ -70,4 +77,29 @@ ul {
 
 .neon-green {
   background-color: #55d8c1;
+}
+
+.more__news {
+  position: relative;
+  height: 1.1rem;
+}
+
+.more__links {
+  background-color: var(--white-color);
+  float: right;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  color: var(--normal-gray);
+}
+
+.more__news::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background-color: var(--light-gray);
+  position: absolute;
+  top: 50%;
+  z-index: -1;
 }

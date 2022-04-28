@@ -150,6 +150,16 @@ const banners = [
   { image: "banner-3" },
 ];
 
+const footerInfo = {
+  // logo: "logo-NAL",
+  title: "NAL MEDIA ベトナムオフショア開発にまつわる情報を提供します",
+  content:
+    "このサイトは、ベトナムにおけるオフショア開発の状況、ベトナムと日本の協力関係、およびテクノロジーに関する最新のニュースを更新し、NALの人々とお客様のストーリーを投稿しております。",
+  address: "住所：3F, 84 Duy Tân, Cầu Giấy, Hà Nội, Việt Nam",
+  phone: "電話番号：(+84)243-787-8654",
+  email: "メールアドレス：info@nal.vn",
+};
+
 function renderLastestPosts(obj) {
   const html = [];
   obj.forEach((post) => {
@@ -161,10 +171,10 @@ function renderLastestPosts(obj) {
         : "neon-green";
     const item = `<li class="post__item">
                       <a href="##" class="item__link row sm-gutters">
-                        <div class="item__img col pc-4">
+                        <div class="item__img col pc-4 tb-4 mb-12">
                           <img src="./assets/img/${post.id}.jpg" alt="" />
                         </div>
-                        <section class="post__content col pc-8">
+                        <section class="post__content col pc-8 tb-8 mb-12">
                           <span class="post__tag ${tagType}">${post.category_name}</span>
                           <div class="content__info">
                             <h1 class="post__heading title">
@@ -239,7 +249,17 @@ function renderBanners(obj) {
   document.querySelector("div.banner__section").innerHTML = html.join("");
 }
 
+function renderFooter(obj) {
+  html = [];
+  for (const value of Object.values(obj)) {
+    const item = `<p>${value}</p>`;
+    html.push(item);
+  }
+  document.querySelector("div.footer__info").innerHTML = html.join("");
+}
+
 renderLastestPosts(latestPosts);
 renderPopuPosts(popularPosts);
 renderTags(tagsList);
 renderBanners(banners);
+renderFooter(footerInfo);
