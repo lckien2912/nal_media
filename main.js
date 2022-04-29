@@ -264,3 +264,22 @@ renderPopuPosts(popularPosts);
 renderTags(tagsList);
 renderBanners(banners);
 renderFooter(footerInfo);
+
+const navbar = document.querySelector(".navbar");
+const sticky = navbar.offsetTop;
+const main = document.querySelector("main");
+
+window.onscroll = function () {
+  myFunction();
+  navbar.classList.contains("sticky")
+    ? (main.style.paddingTop = "80px")
+    : (main.style.paddingTop = "20px");
+};
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

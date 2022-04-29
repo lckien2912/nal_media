@@ -118,3 +118,13 @@
 .nav__item:hover {
   background-color: var(--light-gray);
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar.sticky {
+  background-color: var(--white-color);
+  z-index: 10;
+}
