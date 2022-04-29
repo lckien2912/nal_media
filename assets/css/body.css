@@ -207,10 +207,6 @@ main {
   height: 250px;
   overflow: hidden;
   position: relative;
-  /* overflow-x: scroll; */
-  /* scroll-behavior: smooth; */
-  /* --tw-scroll-snap-strictness: mandatory;
-  scroll-snap-type: x var(--tw-scroll-snap-strictness); */
 }
 
 .slide {
@@ -218,10 +214,6 @@ main {
   height: 250px;
   position: absolute;
   text-align: center;
-  left: 100%;
-  transition: left 1s;
-  /* scroll-snap-stop: always;
-  scroll-snap-align: center; */
 }
 
 .button-container {

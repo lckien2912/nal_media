@@ -3,7 +3,7 @@ const slideCount = slides.length;
 
 let i = 0;
 function next() {
-  i++; // i = i + i
+  i++;
   if (i < slideCount) {
     slides[i].style.left = "0";
     slides[i - 1].style.left = "-100%";
@@ -22,12 +22,8 @@ function next() {
 }
 document.getElementById("next").onclick = next;
 
-// function prev() {
-
 function prev() {
-  //   let i = slideCount - 1;
-  //   i = slideCount - 1;
-  i--; // i = i + i
+  i--;
   if (i >= 0) {
     slides[i].style.left = "0";
     slides[i + 1].style.left = "-100%";
@@ -46,11 +42,3 @@ function prev() {
 }
 
 document.getElementById("previous").onclick = prev;
-
-//     let slideIndex = 1;
-
-// }
-
-// function showSlide
-
-// Run the function, move left, when clicked on next//
