@@ -214,6 +214,7 @@ main {
   height: 250px;
   position: absolute;
   text-align: center;
+  left: 100%;
 }
 
 .button-container {
